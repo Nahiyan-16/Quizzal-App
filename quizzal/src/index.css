@@ -1,0 +1,55 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: Karla, sans-serif;
+}
+
+.firstPage{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.yellowBlob{
+  display: block;
+  margin-left: auto;
+}
+
+.blueBlob{
+  display: block;
+}
+
+.firstPageTextContainer{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.firstPage h1{
+  color: #293264;
+  font-size: 3em;
+}
+
+.firstPage button{
+  margin: 0 auto;
+  padding: 1em 2em;
+  font-size: 1.25em;
+  font-family: inherit;
+  font-weight: 700;
+  border: none;
+  background: #4D5B9E;
+  color: whitesmoke;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.topSVG{
+  display: flex;
+  justify-content: space-evenly;
+}
