@@ -5,7 +5,6 @@
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
   font-family: Karla, sans-serif;
 }
 
@@ -56,6 +55,64 @@ body {
 
 .answerList{
   display: flex;
+  justify-content: space-evenly;
+  width: 85%;
   list-style-type: none;
-  border: 1px solid red;
+}
+
+.answerList p{
+  margin-right: 1em;
+}
+
+.quizPageContainer{
+  padding: 1em;
+  margin: -7em 5em;
+}
+
+.questionContainer{
+  color: #293264;
+  padding-bottom: 2em;
+  border-bottom: 2px solid #DBDEF0;
+}
+
+.questionContainer button{
+  border: 1px solid #293264;
+  color: #293264;
+  padding: 1em 2em;
+  border-radius: 10px;
+  font-family: inherit;
+  background: transparent;
+  min-width: 100px;
+  width: 200px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: scale 500ms;
+}
+
+.questionContainer button:hover{
+  scale: 1.2;
+}
+
+.quizSubmit{
+  padding: 1em 2em;
+  font-size: 2rem;
+  text-align: center;
+  margin: 5em auto 2em;
+  display: block;
+  font-family: inherit;
+  color: #ebeeff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 1px 1px 5px black;
+  cursor: pointer;
+  transition: scale 500ms;
+  background: #e63e3e;
+}
+
+.quizSubmit:hover{
+  scale: 1.1;
+}
+
+.selected{
+  background: #293264;
 }

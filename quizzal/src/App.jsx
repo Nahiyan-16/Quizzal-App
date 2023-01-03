@@ -7,18 +7,13 @@ export default function App() {
   const [quizQuestions, setQuizQuestions] = React.useState([])
 
   React.useEffect(
-    ()=>{
-      fetch('https://the-trivia-api.com/api/questions')
-      .then(res=>res.json())
-      .then(data => {
-        let ary = []
-        for (let i = 0; i < 5; i++){
-          ary.push(data[i])
-        }
-        if(quizQuestions.length <= 5){
-          setQuizQuestions(ary)
-        }
-      })
+    () => {
+      const fetchData = async () => {
+        const res = await fetch('https://the-trivia-api.com/api/questions')
+        const data = await res.json()
+        setQuizQuestions(data)
+      }
+      fetchData()
     },
     []
   )
@@ -27,10 +22,18 @@ export default function App() {
     setPageStart(false)
   }
 
+  function handleClick(e){
+    
+  }
+
   return (
     <div className="App">
         {pageStart?<FirstPage startQuiz= {startQuiz}/>:""}
-        {!pageStart?<QuizPage questions= {quizQuestions}/>:""}
+        {!pageStart?<QuizPage 
+          questions= {quizQuestions}
+          handleClick= {handleClick}
+          />:""
+        }
     </div>
   )
 }
