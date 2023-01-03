@@ -53,3 +53,9 @@ body {
   display: flex;
   justify-content: space-evenly;
 }
+
+.answerList{
+  display: flex;
+  list-style-type: none;
+  border: 1px solid red;
+}
