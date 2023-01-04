@@ -90,7 +90,8 @@ body {
 }
 
 .questionContainer button:hover{
-  scale: 1.2;
+  scale: 1.1;
+  box-shadow: 1px 1px 5px black;
 }
 
 .quizSubmit{
@@ -113,6 +114,7 @@ body {
   scale: 1.1;
 }
 
-.selected{
-  background: #293264;
+.green{
+  background-color: rgb(168, 255, 168);
+  color: #293264;
 }

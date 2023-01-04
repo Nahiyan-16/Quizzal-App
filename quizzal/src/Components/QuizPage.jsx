@@ -15,74 +15,74 @@ export default function QuizPage(props){
                     <Question question={props.questions[0].question}/>
                     <Answer 
                         answer={props.questions[0]}
-                        handleClick = {props.handleClick}    
+                        revealAnswer= {props.questions.revealAnswers}   
                     />
                 </div>
                 <div className='questionContainer'>
                     <Question question={props.questions[1].question}/>
                     <Answer 
                         answer={props.questions[1]}
-                        handleClick = {props.handleClick}    
+                        revealAnswer= {props.questions.revealAnswers}   
                     />
                 </div>
                 <div className='questionContainer'>
                     <Question question={props.questions[2].question}/>
                     <Answer 
                         answer={props.questions[2]}
-                        handleClick = {props.handleClick}    
+                        revealAnswer= {props.questions.revealAnswers}   
                     />
                 </div>
                 <div className='questionContainer'>
                     <Question question={props.questions[3].question}/>
                     <Answer 
                         answer={props.questions[3]}
-                        handleClick = {props.handleClick}    
+                        revealAnswer= {props.questions.revealAnswers}   
                     />
                 </div>
                 <div className='questionContainer'>
                     <Question question={props.questions[4].question}/>
                     <Answer 
                         answer={props.questions[4]}
-                        handleClick = {props.handleClick}    
+                        revealAnswer= {props.questions.revealAnswers}   
                     />
                 </div>
                 <div className='questionContainer'>
                     <Question question={props.questions[5].question}/>
                     <Answer 
                         answer={props.questions[5]}
-                        handleClick = {props.handleClick}    
+                        revealAnswer= {props.questions.revealAnswers}   
                     />
                 </div>
                 <div className='questionContainer'>
                     <Question question={props.questions[6].question}/>
                     <Answer 
                         answer={props.questions[6]}
-                        handleClick = {props.handleClick}    
+                        revealAnswer= {props.questions.revealAnswers}   
                     />
                 </div>
                 <div className='questionContainer'>
                     <Question question={props.questions[7].question}/>
                     <Answer 
                         answer={props.questions[7]}
-                        handleClick = {props.handleClick}    
+                        revealAnswer= {props.questions.revealAnswers}   
                     />
                 </div>
                 <div className='questionContainer'>
                     <Question question={props.questions[8].question}/>
                     <Answer 
                         answer={props.questions[8]}
-                        handleClick = {props.handleClick}    
+                        revealAnswer= {props.questions.revealAnswers}   
                     />
                 </div>
                 <div className='questionContainer'>
                     <Question question={props.questions[9].question}/>
                     <Answer 
                         answer={props.questions[9]}
-                        handleClick = {props.handleClick}    
+                        revealAnswer= {props.questions.revealAnswers}   
                     />
                 </div>
             </div>
-            <button className='quizSubmit'>Submit</button>
+            <button className='quizSubmit' onClick={props.handleSubmit}>Submit</button>            
         </div>
     )
 }
